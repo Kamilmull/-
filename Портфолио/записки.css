@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto,wght@1,100;1,400&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  /* max-width: 1900px; */
+  background-color: #252526;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-variant-caps: all-petite-caps;
+  color: azure;
+  font-size: 24px;
+  gap: 200px;
+}
+
+.container {
+  max-width: 1540px;
+/*   display: flex;
+  justify-content: space-evenly; */
+  padding: 18px;
+  margin: 0 auto;
+}
+
+.nickname {
+  font-weight: bold;
+}
+
+.about {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.about-section {
+  background-color: #454546;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  color: azure;
+}
+
+.call-me, .logo {
+  width: 50%;
+}
+
+.img-logo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #252526;
+  color: azure;
+}
+
+.skills-section, .contacts-section {
+  background-color: #EADED4;
+}
+
+h2 {
+  font-size: 46px;
+  font-variant-caps: all-petite-caps;
+  padding-bottom: 30px;
+}
+
+.skills, .contacts {
+  text-align: center;
+}
+
+.skill-cards, .contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.skill, .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #252526;
+  color: azure;
+  font-size: 36px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #252526;
+  color: azure;
+  font-size: 28px;
+}
+
+.projects-section {
+  background-color: #252526;
+  color: azure;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.projects {
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.project-image {
+  width: 350px;
+  height: auto;
+}
+
+h3 {
+  font-size: 30px;
+  font-variant-caps: all-petite-caps;
+  padding-bottom: 15px;
+}
+
+footer {
+  /* max-width: 1900px; */
+  background-color: #252526;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-variant-caps: all-petite-caps;
+  color: azure;
+  font-size: 24px;
+  gap: 200px;
+}
+
+
+
+@media (max-width: 576px) {
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-variant-caps: all-petite-caps;
+    color: azure;
+    font-size: 18px;
+    gap: 100px;
+  }
+
+  .skill-cards, .about-me, .project, .project-cards, .contact-cards {
+    flex-direction: column;
+  }
+  
+  .call-me, .logo {
+    display: block;
+    text-align: center;
+  }
+
+  .img-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    /* margin-left: 0; */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .skill-cards {
+    align-items: center;
+  }
+
+  .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-size: 14px;
+  }
+  
+    h2, h3 {
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+  .head, .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-variant-caps: all-petite-caps;
+    color: azure;
+    font-size: 14px;
+    gap: 50px;
+  }
+
+  h2, h3 {
+    font-size: 18px;
+    padding-bottom: 8px;
+
+  }
+
+  .skill, .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #252526;
+    color: azure;
+    font-size: 18px;
+  }
+
+  .project-image {
+    width: 150px;
+    height: auto;
+  }
+
+  .project-cards {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+}
